@@ -1,4 +1,5 @@
 import React from 'react';
+// import goatdata from '../helpers/data/goatData';
 import './App.scss';
 
 class App extends React.Component {
