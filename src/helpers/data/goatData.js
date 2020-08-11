@@ -12,7 +12,7 @@ const goats = [
     name: 'Wooly',
     age: 85,
     description: 'I like eating grass.',
-    imgUrl: 'https://pbs.twimg.com/profile_images/980547001166295041/eBs20xF4.jpg',
+    imgUrl: 'https://www.washingtonian.com/wp-content/uploads/2017/06/6-30-17-goat-yoga-congressional-cemetery-1.jpg',
     isBusy: true,
   },
   {
@@ -20,7 +20,7 @@ const goats = [
     name: 'Vincent van Goat',
     age: 18,
     description: 'SHHHHHHH',
-    imgUrl: 'https://goatyoga.com/wp-content/uploads/goat-yoga-goat-in-pink-tutu-with-unicorn-horn.jpg',
+    imgUrl: 'https://bit.ly/2XObT0W',
     isBusy: false,
   },
   {
@@ -41,6 +41,6 @@ const goats = [
   },
 ];
 
-const getGoatData = () => goats;
+const getGoats = () => goats;
 
-export default { getGoatData };
+export default { getGoats };

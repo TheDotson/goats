@@ -1,14 +1,24 @@
 import React from 'react';
-// import goatdata from '../helpers/data/goatData';
+import GoatCorral from '../components/GoatCorral/GoatCorral';
+import goatData from '../helpers/data/goatData';
 import './App.scss';
 
 class App extends React.Component {
+  state = {
+    goats: [],
+  }
+
+  componentDidMount() {
+    const goats = goatData.getGoats();
+    this.setState({ goats });
+  }
+
   render() {
+    const { goats } = this.state;
     return (
       <div className="App">
         <h2>Goats</h2>
-        <button className="btn btn-info">
-        <i className="fas fa-torii-gate"></i>Goat Button<i className="fas fa-torii-gate"></i></button>
+        <GoatCorral goats={goats} />
       </div>
     );
   }
